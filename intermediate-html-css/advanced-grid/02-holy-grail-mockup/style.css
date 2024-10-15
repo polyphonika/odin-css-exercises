@@ -89,3 +89,37 @@
   font-size: 13px;
   font-weight: normal;
 }
+
+/* My edits */
+
+.container {
+  display: grid;
+  gap: 4px;
+  grid-template-columns: 1fr 4fr;
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  
+  display: grid;  
+  grid-template-columns: 1fr 2fr;
+
+}
+
+.header .logo {
+  justify-self: start;
+}
+
+.header .menu {
+  align-self: center;
+}
+
+.header .menu ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  
+}
+
+.header .menu ul li {
+  list-style-type: none;
+}
